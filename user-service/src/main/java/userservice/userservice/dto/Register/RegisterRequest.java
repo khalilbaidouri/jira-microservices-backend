@@ -1,4 +1,4 @@
-package userservice.userservice.dto;
+package userservice.userservice.dto.Register;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

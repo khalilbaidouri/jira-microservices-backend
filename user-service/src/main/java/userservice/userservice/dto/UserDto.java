@@ -1,6 +1,21 @@
 package userservice.userservice.dto;
 
-/**
- @author $ {USERS}
- **/public class UserDto {
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class UserDto {
+    private UUID id;
+    private String nom;
+    private String prenom;
+    private String email;
+    private LocalDateTime dateCreation;
 }

@@ -1,4 +1,4 @@
-package userservice.userservice.dto;
+package userservice.userservice.dto.Register;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

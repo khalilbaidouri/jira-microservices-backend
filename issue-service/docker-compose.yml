@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres-issue:
+    image: postgres:16
+    container_name: postgres-issue
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: issue_db
+      POSTGRES_USER: issue_service
+      POSTGRES_PASSWORD: issue_pass
+    ports:
+      - "5434:5432"
+    volumes:
+      - pg_issue_data:/var/lib/postgresql/data
+
+volumes:
+  pg_issue_data:

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73cc0d0f-461e-43ca-851e-505396fcb18b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/gatewayservice/gatewayservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/gatewayservice/gatewayservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/DTOs/CreateIssueRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/DTOs/CreateIssueRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/DTOs/UpdateAssigneeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/DTOs/UpdateAssigneeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/DTOs/UpdateStatusRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/DTOs/UpdateStatusRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/IssueRepository/IssueRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/IssueRepository/IssueRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/client/ProjectClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/client/ProjectClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/controller/IssueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/controller/IssueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/entity/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/entity/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/enums/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/enums/Priority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/enums/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/enums/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/enums/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/service/IssueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/issue-service/src/main/java/issueservice/issueservice/service/IssueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/DTOs/AddMemberRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/DTOs/AddMemberRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/DTOs/CreateProjectRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/DTOs/CreateProjectRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/DTOs/ProjectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/DTOs/ProjectResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/controller/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/entity/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/entity/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/entity/ProjectMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/entity/ProjectMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/enums/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/repository/ProjectMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/repository/ProjectMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/repository/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/projectservice/projectservice/service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/config/KeycloakAdminProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/config/KeycloakAdminProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/config/RestTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/controller/InternalUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/controller/InternalUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Login/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Login/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Login/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Login/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Register/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Register/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Register/RegisterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/Register/RegisterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/InvalidCredentialsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/InvalidCredentialsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/KeycloakAdminException.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/KeycloakAdminException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/UsernameAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/exception/UsernameAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/service/Impl/KeycloakAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/service/Impl/KeycloakAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/userservice/userservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="88" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Exception" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/khalilbaidouri/jira-microservices-backend.git",
+    "accountId": "cc806901-bdd9-4b07-93c1-de1bd68c9320"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.6106446831218197" />
+      <entry key="MS500" value="2.508483435786596" />
+      <entry key="S2" value="2.85946489552161" />
+      <entry key="S5" value="2.950640741245113" />
+      <entry key="S10" value="3.100412648777033" />
+      <entry key="S30" value="3.793331004819571" />
+      <entry key="S60" value="4.282544956254606" />
+      <entry key="M2" value="4.734195450944516" />
+      <entry key="M5" value="5.361366639570297" />
+      <entry key="M10" value="6.053211478789384" />
+      <entry key="M15" value="7.788567276794308" />
+      <entry key="M30" value="22.45788863335578" />
+      <entry key="H1" value="58.9642000500152" />
+      <entry key="H2" value="110.95114534784308" />
+      <entry key="H4" value="169.13694414135998" />
+      <entry key="D1" value="267.65215626059626" />
+      <entry key="W1" value="293.3589627503142" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.2244401973767443E-193" />
+      <entry key="MS500" value="2.615697490605776E-39" />
+      <entry key="S2" value="2.261501629838292E-10" />
+      <entry key="S5" value="1.3877786088600607E-4" />
+      <entry key="S10" value="0.012196216157796078" />
+      <entry key="S30" value="0.30258052306437494" />
+      <entry key="S60" value="0.7509866426635199" />
+      <entry key="M2" value="1.214098973010418" />
+      <entry key="M5" value="1.634634991733466" />
+      <entry key="M10" value="1.8411049710800855" />
+      <entry key="M15" value="2.0268947236011847" />
+      <entry key="M30" value="2.715607883359805" />
+      <entry key="H1" value="4.9312884176463045" />
+      <entry key="H2" value="15.314196619534734" />
+      <entry key="H4" value="37.23571201086286" />
+      <entry key="D1" value="86.40520253754823" />
+      <entry key="W1" value="100.43494508149406" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.030254344500183" />
+      <entry key="MS500" value="1.687275331200048" />
+      <entry key="S2" value="2.3976167426313557" />
+      <entry key="S5" value="2.7248156710710423" />
+      <entry key="S10" value="2.9821754985020203" />
+      <entry key="S30" value="4.0144365801370165" />
+      <entry key="S60" value="4.969680376370284" />
+      <entry key="M2" value="5.9051187712794295" />
+      <entry key="M5" value="6.974719488780339" />
+      <entry key="M10" value="7.882427206075943" />
+      <entry key="M15" value="9.806120584378162" />
+      <entry key="M30" value="25.165185040999496" />
+      <entry key="H1" value="63.88715932435553" />
+      <entry key="H2" value="126.25550157027996" />
+      <entry key="H4" value="206.36249028583543" />
+      <entry key="D1" value="354.0537738636239" />
+      <entry key="W1" value="393.79331935530456" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3GGkZUJv9jKwlcEudXdLBp3XNjx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.issue-service: Compose Deployment.executor": "Run",
+    "Docker.project-service: Compose Deployment.executor": "Run",
+    "Docker.userservice.keycloak: Compose Deployment.executor": "Run",
+    "Docker.userservice.postgres-user: Compose Deployment.executor": "Run",
+    "Docker.userservice: Compose Deployment.executor": "Run",
+    "JUnit.All in user-service.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.GatewayServiceApplication.executor": "Run",
+    "Spring Boot.IssueServiceApplication.executor": "Run",
+    "Spring Boot.ProjectServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="GatewayServiceApplication" value="STOPPED" />
+              <entry key="IssueServiceApplication" value="STOPPED" />
+              <entry key="ProjectServiceApplication" value="STOPPED" />
+              <entry key="UserServiceApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration name="All in user-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="gatewayservice.gatewayservice.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IssueServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="issue-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="issueservice.issueservice.IssueServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="project-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="projectservice.projectservice.ProjectServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="userservice.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="issue-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="issue-service/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="project-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="project-service/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="userservice: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="user-service/src/main/java/userservice/userservice/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="userservice.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="keycloak" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="user-service/src/main/java/userservice/userservice/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.issue-service: Compose Deployment" />
+        <item itemvalue="Docker.project-service: Compose Deployment" />
+        <item itemvalue="Docker.userservice: Compose Deployment" />
+        <item itemvalue="JUnit.All in user-service" />
+        <item itemvalue="Docker.userservice.keycloak: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73cc0d0f-461e-43ca-851e-505396fcb18b" name="Changes" comment="" />
+      <created>1783605349799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783605349799</updated>
+      <workItem from="1783605353862" duration="8810000" />
+      <workItem from="1783614472434" duration="990000" />
+      <workItem from="1783615534856" duration="597000" />
+      <workItem from="1783616212256" duration="1072000" />
+      <workItem from="1783680453945" duration="1448000" />
+      <workItem from="1783767026643" duration="7916000" />
+      <workItem from="1783850747644" duration="5187000" />
+      <workItem from="1783870577411" duration="27000" />
+      <workItem from="1787824247255" duration="8957000" />
+      <workItem from="1787841337397" duration="4155000" />
+      <workItem from="1787860753324" duration="1001000" />
+      <workItem from="1787861802671" duration="107000" />
+      <workItem from="1787861935000" duration="665000" />
+      <workItem from="1787862676741" duration="76000" />
+      <workItem from="1787862797487" duration="117000" />
+      <workItem from="1787863165518" duration="316000" />
+      <workItem from="1787906085445" duration="14352000" />
+      <workItem from="1788118146486" duration="4727000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.security.authorization.AuthorizationDeniedException" package="org.springframework.security.authorization" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

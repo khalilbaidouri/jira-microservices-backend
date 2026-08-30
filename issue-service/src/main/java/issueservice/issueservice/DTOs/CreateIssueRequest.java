@@ -1,4 +1,4 @@
-package issueservice.issueservice.service;
+package issueservice.issueservice.DTOs;
 
 /**
  * @author $ {USERS}

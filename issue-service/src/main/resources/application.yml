@@ -1,0 +1,32 @@
+server:
+  port: 8084 # Port dédié pour issue-service
+
+spring:
+  application:
+    name: issue-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5434/issue_db
+    username: issue_service
+    password: issue_pass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/jira
+
+# URL de base pour joindre project-service
+services:
+  project-service:
+    url: http://localhost:8083

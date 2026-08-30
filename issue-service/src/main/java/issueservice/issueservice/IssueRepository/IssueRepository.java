@@ -1,6 +1,15 @@
 package issueservice.issueservice.IssueRepository;
 
 /**
- @author $ {USERS}
- **/public interface IssueRepository {
+ * @author $ {USERS}
+ **/
+
+
+import issueservice.issueservice.entity.Issue;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface IssueRepository extends JpaRepository<Issue, Long> {
+    List<Issue> findByProjectId(Long projectId);
+    long countByProjectId(Long projectId);
 }

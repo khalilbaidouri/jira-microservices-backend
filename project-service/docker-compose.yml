@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres-project:
+    image: postgres:16
+    container_name: postgres-project
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: project_db
+      POSTGRES_USER: project_service
+      POSTGRES_PASSWORD: project_pass
+    ports:
+      - "5433:5432" # Mappé sur le port 5433 pour ne pas entrer en conflit avec user-service (5432)
+    volumes:
+      - pg_project_data:/var/lib/postgresql/data
+
+volumes:
+  pg_project_data:

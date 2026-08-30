@@ -1,9 +1,7 @@
 package userservice.userservice.exception;
 
-/**
- @author $ {USERS}
- **/public class InvalidCredentialsException extends RuntimeException {
-  public InvalidCredentialsException(String message) {
-    super(message);
-  }
+public class InvalidCredentialsException extends RuntimeException {
+    public InvalidCredentialsException() {
+        super("Nom d'utilisateur ou mot de passe incorrect");
+    }
 }

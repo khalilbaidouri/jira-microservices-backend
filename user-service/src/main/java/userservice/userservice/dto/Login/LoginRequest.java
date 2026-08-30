@@ -1,4 +1,4 @@
-package com.minijira.userservice.dto;
+package userservice.userservice.dto.Login;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
