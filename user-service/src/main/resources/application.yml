@@ -6,7 +6,7 @@ spring:
     name: user-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/user_db
+    url: jdbc:postgresql://postgres-user:5432/user_db
     username: user_service
     password: user_pass
 
@@ -23,13 +23,13 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/jira
+          issuer-uri: http://keycloak:8080/realms/jira
 
 keycloak:
-  server-url: http://localhost:8080
+  server-url: http://keycloak:8080
   realm: jira
   client-id: jira-app
-  client-secret: ZenqHUQU2WLnWjvjIMIm45BuVYfT5zyQ
+  client-secret: mu7oM7miPph6FrGZ1iEOyA6q7rUoYElF
   default-role: MEMBRE
 
 logging:
