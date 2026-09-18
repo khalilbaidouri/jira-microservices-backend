@@ -23,13 +23,14 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak:8080/realms/jira
+          jwk-set-uri: http://keycloak:8080/realms/jira/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8080/realms/jira
 
 keycloak:
   server-url: http://keycloak:8080
   realm: jira
   client-id: jira-app
-  client-secret: mu7oM7miPph6FrGZ1iEOyA6q7rUoYElF
+  client-secret: k255GP0ut9fkI4WyA5yk2xiRpktnc2Dt
   default-role: MEMBRE
 
 logging:
