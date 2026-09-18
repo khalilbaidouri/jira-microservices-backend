@@ -1,0 +1,126 @@
+version: '3.8'
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  keycloak_data:
+
+services:
+  # Base de données PostgreSQL multi-databases
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-dbs.sql:/docker-entrypoint-initdb.d/init-dbs.sql
+    networks:
+      - app-network
+
+  # Serveur Keycloak (compatible ARM64)
+  keycloak:
+    image: quay.io/keycloak/keycloak:24.0
+    container_name: keycloak-auth
+    restart: always
+    command: start-dev
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: adminpassword
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres:5432/keycloak_db
+      KC_DB_USERNAME: postgres
+      KC_DB_PASSWORD: postgrespassword
+      KC_HEALTH_ENABLED: "true"
+      KC_METRICS_ENABLED: "true"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+  # Moteur d'autorisation Cerbos
+  cerbos:
+    image: ghcr.io/cerbos/cerbos:0.35.0
+    container_name: cerbos-authz
+    restart: always
+    ports:
+      - "3592:3592"
+      - "3593:3593"
+    volumes:
+      - ./cerbos/policies:/policies
+      - ./cerbos/conf:/conf
+    command: ["server", "--config=/conf/cerbos.yaml"]
+    networks:
+      - app-network
+
+  # API Gateway (Spring Cloud Gateway)
+  api-gateway:
+    image: openjdk:21-slim
+    container_name: api-gateway
+    restart: on-failure
+    ports:
+      - "80:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      KEYCLOAK_URL: http://keycloak:8080
+    depends_on:
+      - keycloak
+    networks:
+      - app-network
+
+  # Service Utilisateurs
+  user-service:
+    image: openjdk:21-slim
+    container_name: user-service
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/user_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgrespassword
+      CERBOS_HOST: cerbos:3593
+    depends_on:
+      - postgres
+      - cerbos
+    networks:
+      - app-network
+
+  # Service Projets
+  project-service:
+    image: openjdk:21-slim
+    container_name: project-service
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/project_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgrespassword
+      CERBOS_HOST: cerbos:3593
+    depends_on:
+      - postgres
+      - cerbos
+    networks:
+      - app-network
+
+  # Service Issues / Tickets
+  issue-service:
+    image: openjdk:21-slim
+    container_name: issue-service
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/issue_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgrespassword
+      CERBOS_HOST: cerbos:3593
+    depends_on:
+      - postgres
+      - cerbos
+    networks:
+      - app-network
